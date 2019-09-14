@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-area {
+    display: flex;
+    align-items: center;
+}
+
+.brandname{
+    width: 33.3%;
+}
+a:link{
+    text-decoration: none;
+    color: black ;
+}
+ a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.menu {
+    width: 66%;
+    margin-left: auto;
+}
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+}
+.showcase {
+    width: 33.3%;
+}
+.showcase-content {
+    width: 49.8%;
+}
+
+.masonry-area {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.mycolumn {
+    width: 33.3%;
+    padding:0 4px;
+}
+.mycolumn img {
+    width: 100%;
+    vertical-align:middle;
+    margin-top: 8px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: filter 600ms ease;
+    -webkit-transition: -webkit-filter 600ms ease;
+}
+.mycolumn img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
+}
+
+
+.middle{
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 8px;
+text-align: left;
+width:100%;
+}
+.pic-container {
+    position: relative;
+}
+.pic-container:hover .middle{
+    opacity: 1;
+}
+.linkname{
+background-color: rgb(198, 199, 198);
+  font-size: 16px;
+  line-height: 3rem;
+  padding: 0 5px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .showcase, .showcase-content {
+        width: 100%;
+    }
+    .mycolumn {
+        width: 50%;
+    }
+    #mycolumn3 {
+        width: 100%;
+        padding: 0;        
+    }
+    #mycolumn3 img {
+        width:calc(48.6% - 4px);
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+    .middle {
+        display: none;
+    }
+    
+}
