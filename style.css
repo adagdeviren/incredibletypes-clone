@@ -3,12 +3,16 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .header-area {
     display: flex;
     align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 .brandname{
@@ -17,6 +21,9 @@ body {
 a:link{
     text-decoration: none;
     color: black ;
+}
+a:visited{
+    color: black;
 }
  a:hover{
     color: black;
@@ -30,6 +37,7 @@ a:link{
 .intro{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 3rem;
 }
 .showcase {
     width: 33.3%;
@@ -86,6 +94,60 @@ background-color: rgb(198, 199, 198);
 }
 
 
+        .l-post-title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .l-post-title h6 {
+            width: 66.6%;
+            padding:0.5rem;
+            color:rgb(22, 21, 21);
+            font-size: 0.9rem;
+            
+        } 
+
+        .posts-main {
+            display: flex;
+            flex-wrap: wrap;
+            width:66.6%;
+            margin-left:33.3%;
+            list-style-type: none;
+            font-size: 0.8rem;
+            color:rgb(22, 21, 21);
+            padding-bottom: 5rem;
+        }
+        .posts-main > div{
+            width:25%;
+            padding:0.5rem;
+        }
+        li {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5rem;
+        }
+
+        /* footer */
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            width:66.6%;
+            margin-left:33.3%;
+            list-style-type: none;
+            font-size: 0.6rem;
+            color:rgb(43, 41, 41);
+            padding-top: 4rem;
+        }
+        .footer > div{
+            width:25%;
+            padding:0.5rem;
+            align-items: flex-end;
+            
+        }
+
+
 @media only screen and (max-width: 600px) {
     .showcase, .showcase-content {
         width: 100%;
@@ -104,6 +166,28 @@ background-color: rgb(198, 199, 198);
     }
     .middle {
         display: none;
+    }
+
+    li {
+        display: block;
+        overflow: visible;
+    }
+    .posts-main .otherposts{
+        display: none;
+    }
+    .latest{
+        width: 100%;
+    }
+    .posts-main{
+        width:100%;
+        margin-left: 0;
+    }
+    .footer{
+        width:100%;
+        margin-left: 0;
+    }
+    .footer > div {
+        flex-direction: column;
     }
     
 }
